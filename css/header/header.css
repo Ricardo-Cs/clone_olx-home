@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 24px;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.nav-primaria ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.nav-primaria ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4a4a4a;
+  font-size: 0.875rem;
+}
+
+.nav-primaria ul li a:not(#desapegar-button):hover path,
+.nav-primaria ul li a:hover span {
+  color: #6e0ad6;
+  fill: #6e0ad6;
+}
+
+#login-button {
+  width: 135px;
+  height: 40px;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+#login-button:hover {
+  border-color: #6e0ad6;
+  color: #6e0ad6;
+}
+
+#desapegar-button {
+  background-color: #f28000;
+  padding: 8px 24px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+#desapegar-button:hover {
+  background-color: #df7400;
+  border-color: #df7400;
+}

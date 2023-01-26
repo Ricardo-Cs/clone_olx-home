@@ -5,10 +5,84 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clone da página Home da OLX, apenas para fins educativos">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
   <title>OLX - O Maior Site de Compra e Venda do Brasil</title>
 </head>
 
 <body>
+  <header>
+    <img src="./img/icons/logo.svg" alt="Logo do Site">
+    <nav class="nav-primaria" aria-label="Menu Principal">
+      <ul>
+        <li>
+          <a href="./">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="nav-svg" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" width="24" height="24" color="currentColor" size="24">
+              <path fill="#4A4A4A" fill-rule="evenodd"
+                d="M7.25 6.25V5A2.75 2.75 0 0110 2.25h4A2.75 2.75 0 0116.75 5v1.25H20A2.75 2.75 0 0122.75 9v10A2.75 2.75 0 0120 21.75H4A2.75 2.75 0 011.25 19V9A2.75 2.75 0 014 6.25h3.25zm1.5 0h6.5V5c0-.69-.56-1.25-1.25-1.25h-4c-.69 0-1.25.56-1.25 1.25v1.25zM4 7.75c-.69 0-1.25.56-1.25 1.25v10c0 .69.56 1.25 1.25 1.25h16c.69 0 1.25-.56 1.25-1.25V9c0-.69-.56-1.25-1.25-1.25H4z">
+              </path>
+            </svg>
+            <span>Plano Profissional</span>
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              width="24" height="24" color="currentColor" size="24">
+              <path fill="#4A4A4A" fill-rule="evenodd"
+                d="M3 2.25h7a.75.75 0 01.75.75v7a.75.75 0 01-.75.75H3a.75.75 0 01-.75-.75V3A.75.75 0 013 2.25zm.75 7h5.5v-5.5h-5.5v5.5zm10.25-7h7a.75.75 0 01.75.75v7a.75.75 0 01-.75.75h-7a.75.75 0 01-.75-.75V3a.75.75 0 01.75-.75zm.75 7h5.5v-5.5h-5.5v5.5zm-.75 4h7a.75.75 0 01.75.75v7a.75.75 0 01-.75.75h-7a.75.75 0 01-.75-.75v-7a.75.75 0 01.75-.75zm.75 7h5.5v-5.5h-5.5v5.5zM3 13.25h7a.75.75 0 01.75.75v7a.75.75 0 01-.75.75H3a.75.75 0 01-.75-.75v-7a.75.75 0 01.75-.75zm.75 7h5.5v-5.5h-5.5v5.5z">
+              </path>
+            </svg>
+            <span>Meus Anúncios</span>
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              width="24" height="24" color="currentColor" size="24">
+              <path fill="#4A4A4A" fill-rule="evenodd"
+                d="M20.77 15.635a9.25 9.25 0 01-8.268 5.115 9.13 9.13 0 01-3.854-.842l-5.41 1.804a.75.75 0 01-.95-.95l1.804-5.41A9.128 9.128 0 013.25 11.5a9.249 9.249 0 015.112-8.27 9.128 9.128 0 014.138-.98l.541.001c4.698.26 8.449 4.01 8.709 8.749v.5a9.127 9.127 0 01-.98 4.135zM8.464 18.39a.75.75 0 01.575.042 7.632 7.632 0 003.462.819 7.751 7.751 0 006.93-4.288 7.63 7.63 0 00.82-3.46l.001-.46C20.034 7.106 16.893 3.965 13 3.75h-.502a7.634 7.634 0 00-3.463.82 7.75 7.75 0 00-4.285 6.932 7.63 7.63 0 00.82 3.46.75.75 0 01.042.575l-1.426 4.277 4.277-1.425z">
+              </path>
+            </svg>
+            <span>Chat</span>
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              width="24" height="24" color="currentColor" size="24">
+              <path fill="#4A4A4A" fill-rule="evenodd"
+                d="M22 17.75H2c-1 0-1-1.5 0-1.5A2.25 2.25 0 004.25 14V9a7.75 7.75 0 0115.5 0v5A2.25 2.25 0 0022 16.25c1 0 1 1.5 0 1.5zM18.25 14V9a6.25 6.25 0 00-12.5 0v5c0 .844-.279 1.623-.75 2.25h14a3.733 3.733 0 01-.75-2.25zm-3.871 7.376a2.75 2.75 0 01-4.758 0 .75.75 0 01.649-1.126h3.46a.75.75 0 01.649 1.126z">
+              </path>
+            </svg>
+            <span>Notificações</span>
+          </a>
+        </li>
+        <li>
+          <a href="./" class="button" id="login-button">Entrar</a>
+        </li>
+        <li>
+          <a href="./" class="button" id="desapegar-button">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              width="24" height="24" aria-hidden="true" color="currentColor" size="24">
+              <path fill="#FFFFFF" fill-rule="evenodd"
+                d="M12.75 11.25H19a.75.75 0 110 1.5h-6.25V19a.75.75 0 11-1.5 0v-6.25H5a.75.75 0 110-1.5h6.25V5a.75.75 0 111.5 0v6.25z">
+              </path>
+            </svg>
+            Desapegar</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
 
 </body>
 

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  border: 1px solid #d2d2d2;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+}
