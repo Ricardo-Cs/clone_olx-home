@@ -1,9 +1,10 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 24px;
+  padding: 10px 0px;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .nav-primaria ul {
@@ -19,6 +20,7 @@ header {
   gap: 8px;
   color: #4a4a4a;
   font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .nav-primaria ul li a:not(#desapegar-button):hover path,
