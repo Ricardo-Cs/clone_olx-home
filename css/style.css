@@ -1,2 +1,3 @@
 @import "./global/global.css";
-@import "./header/header.css";
+@import "./home/header.css";
+@import "./home/search.css";

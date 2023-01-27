@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="./js/script.js" defer></script>
 
   <link rel="stylesheet" href="./css/style.css">
   <title>OLX - O Maior Site de Compra e Venda do Brasil</title>
@@ -17,7 +18,7 @@
 <body>
   <header>
     <div class="mobile-header">
-      <div class="side-bar">
+      <div class="side-bar" onclick="abrirMenu()">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
           width="24" height="24" color="currentColor" size="24">
           <path fill="#4A4A4A" fill-rule="evenodd"
@@ -104,6 +105,121 @@
       </ul>
     </nav>
   </header>
+
+  <section class="search-bg">
+    <div class="search-conteudo container">
+      <div class="search-box">
+        <input type="text" placeholder="Estou procurando por...">
+        <button>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24" height="24" size="24" color="currentColor">
+            <path fill="#861BA9" fill-rule="evenodd"
+              d="M16.84 15.78l4.69 4.69a.75.75 0 01-1.06 1.06l-4.69-4.69a8.25 8.25 0 111.06-1.06zm-1.51-.564a6.75 6.75 0 10-.113.113.759.759 0 01.112-.113z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div class="search-categorias">
+        <ul class="categorias-lista">
+          <li>
+            <a href="./">
+              <img src="./img/icons/verao.svg" width="58" height="58" alt="">
+              <small>Verão Olx</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/todas-categorias.svg" width="32" height="32" alt="">
+              </span>
+              <small>Todas as Categorias</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/imoveis.svg" width="32" height="32" alt="">
+              </span>
+              <small>Imovéis</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/todas-categorias.svg" width="32" height="32" alt="">
+              </span>
+              <small>Autos e Peças</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/celular.svg" width="32" height="32" alt="">
+              </span>
+              <small>Eletrônicos e Celulares</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/abajur.svg" width="32" height="32" alt="">
+              </span>
+              <small>Para a sua casa</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/vagas-emprego.svg" width="32" height="32" alt="">
+              </span>
+              <small>Vagas de Emprego</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/servicos.svg" width="32" height="32" alt="">
+              </span>
+              <small>Serviços</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/musica.svg" width="32" height="32" alt="">
+              </span>
+              <small>Músicas e Hobbies</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/esporte.svg" width="32" height="32" alt="">
+              </span>
+              <small>Esportes e Lazer</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/moda.svg" height="32" height="32" alt="">
+              </span>
+              <small>Moda e Beleza</small>
+            </a>
+          </li>
+          <li>
+            <a href="./">
+              <span class="icon-background">
+                <img src="./img/icons/agro.svg" height="32" height="32" alt="">
+              </span>
+              <small>Agro e Indústria</small>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
 
 
 

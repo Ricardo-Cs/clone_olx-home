@@ -90,6 +90,7 @@ header {
   .side-bar {
     display: flex;
     margin-left: 0px;
+    cursor: pointer;
   }
 
   header {
