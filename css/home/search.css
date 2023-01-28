@@ -13,11 +13,18 @@
   outline: none;
   height: 60px;
   padding: 18px 20px;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #4a4a4a;
   width: 100%;
   border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.search-box input::placeholder {
+  color: #d2d2d2;
+  font-weight: 400;
 }
 
 .search-box svg {
@@ -44,6 +51,7 @@
   width: 91px;
   min-height: 91px;
   align-items: center;
+  justify-content: start;
 }
 
 .categorias-lista li img {
@@ -66,4 +74,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 100px;
+}
+
+@media (max-width: 1130px) {
+  .categorias-lista {
+    overflow-x: scroll;
+  }
 }
