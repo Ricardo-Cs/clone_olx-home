@@ -46,12 +46,11 @@
 }
 
 .categorias-lista li a {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
   width: 91px;
-  min-height: 91px;
-  align-items: center;
-  justify-content: start;
+  height: 120px;
 }
 
 .categorias-lista li img {
@@ -71,9 +70,18 @@
   height: 58px;
   background-color: #fff;
   display: flex;
+  /* Aqui eu alinhei todos os svg junto com o grid a tag <a>, mas não tenho certeza se é a forma certa de fazer isso. */
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
   border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s;
+}
+
+.icon-background:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1130px) {
