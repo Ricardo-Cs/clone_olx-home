@@ -6,7 +6,13 @@
   display: flex;
   justify-content: center;
   gap: 0px;
-  padding: 20px;
+  padding-top: 20px;
+}
+
+@media (max-width: 1260px) {
+  .search-box {
+    padding: 20px 10px 0px 10px;
+  }
 }
 
 .search-box input {
@@ -40,7 +46,7 @@
 
 .categorias-lista {
   display: flex;
-  padding: 20px;
+  padding: 20px 0px;
   align-items: center;
   justify-content: space-between;
 }

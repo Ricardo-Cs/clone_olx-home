@@ -1,0 +1,59 @@
+.recomendados-conteudo h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.recomendados-conteudo ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.recomendados-conteudo .img-recentes {
+  width: 100%;
+  height: 120px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.recomendados-conteudo .img-recentes img {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.recomendados-conteudo .conteudo-recentes {
+  margin-top: 7px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+}
+
+.recomendados-conteudo .conteudo-recentes span {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 0.9rem;
+}
+/* o '+' pega um atributo que vem após outro, nesse exemplo estou pegando um span que vem após outro span. Caso queira pegar um que venha antes, deve-se usar o ~ */
+.recomendados-conteudo .conteudo-recentes span + span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Não consegui fazer a barra de scroll quando diminuir a width da página. */
+@media (max-width: 1170px) {
+  .recomendados-conteudo ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .recomendados-conteudo ul li {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 980px) {
+  .recomendados-conteudo ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recomendados-conteudo ul li {
+    margin-bottom: 15px;
+  }
+}
