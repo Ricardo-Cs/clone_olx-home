@@ -1,4 +1,18 @@
+.recomendados-bg {
+  background-color: #6e0ad6;
+}
+
+.recomendados-conteudo {
+  background-color: #fff;
+  padding: 20px 20px 30px 20px;
+}
+
 .recomendados-conteudo h3 {
+  display: block;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: #4a4a4a;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -37,6 +51,12 @@
 .recomendados-conteudo .conteudo-recentes span + span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+/* Separador entre a parte de anúncios recentes e a parte final. */
+.spacer {
+  background-color: #6e0ad6;
+  height: 120px;
 }
 
 /* Não consegui fazer a barra de scroll quando diminuir a width da página. */

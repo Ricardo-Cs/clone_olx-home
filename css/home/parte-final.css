@@ -1,0 +1,23 @@
+.parte_final-bg {
+  background-color: #6e0ad6;
+  margin-bottom: 1000px;
+}
+
+.parte_final-conteudo {
+  background-color: #f6f6f8;
+  padding: 20px;
+}
+
+.p-final_header {
+  display: flex;
+  justify-content: space-between;
+}
+.p-final_header h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.p-final_header h3 span {
+  color: #5c5656;
+}
