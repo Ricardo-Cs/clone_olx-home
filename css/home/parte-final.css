@@ -6,11 +6,13 @@
 .parte_final-conteudo {
   background-color: #f6f6f8;
   padding: 20px;
+  overflow: hidden;
 }
 
 .p-final_header {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
 .p-final_header h3 {
   display: flex;
@@ -20,4 +22,46 @@
 
 .p-final_header h3 span {
   color: #5c5656;
+}
+
+.premium-anuncios {
+  position: relative;
+  margin-top: 40px;
+}
+
+.premium-anuncios ul {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  transition: transform 0.3s ease-in-out;
+}
+
+.premium-anuncios .img-premium {
+  width: 220px;
+  height: 160px;
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+
+.premium-anuncios .img-premium img {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.premium-anuncios .premium-conteudo {
+  margin-top: 7px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+}
+
+.premium-anuncios .premium-conteudo span {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 0.9rem;
+}
+/* o '+' pega um atributo que vem após outro, nesse exemplo estou pegando um span que vem após outro span. Caso queira pegar um que venha antes, deve-se usar o ~ */
+.premium-anuncios .premium-conteudo span + span {
+  font-size: 1rem;
+  font-weight: bold;
 }
