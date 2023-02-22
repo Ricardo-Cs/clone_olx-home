@@ -1,18 +1,15 @@
 .parte_final-bg {
   background-color: #6e0ad6;
-  margin-bottom: 1000px;
 }
 
 .parte_final-conteudo {
   background-color: #f6f6f8;
-  padding: 20px;
-  overflow: hidden;
 }
 
 .p-final_header {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  padding: 25px 20px 20px 20px;
 }
 .p-final_header h3 {
   display: flex;
@@ -23,10 +20,12 @@
 .p-final_header h3 span {
   color: #5c5656;
 }
-
+/* Anuncios Premium */
 .premium-anuncios {
   position: relative;
   margin-top: 40px;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .premium-anuncios ul {
@@ -64,4 +63,68 @@
 .premium-anuncios .premium-conteudo span + span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.arrow {
+  top: 25%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px;
+  background-color: #ffffff;
+}
+
+.arrow:hover {
+  background-color: #e5e5e5;
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
+/* Escolha seu estado */
+.escolha-estado {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.escolha-estado h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4a4a4a;
+}
+.escolha-estado ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.escolha-estado ul a {
+  position: relative;
+}
+
+.escolha-estado ul a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  transition: 0.3s;
+  position: absolute;
+  background-color: currentColor;
+  bottom: 2px;
+}
+
+.escolha-estado ul a:hover::after {
+  width: 100%;
 }
