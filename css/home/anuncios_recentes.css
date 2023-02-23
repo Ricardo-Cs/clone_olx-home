@@ -5,6 +5,7 @@
 .recomendados-conteudo {
   background-color: #fff;
   padding: 20px 20px 30px 20px;
+  overflow: hidden;
 }
 
 .recomendados-conteudo h3 {

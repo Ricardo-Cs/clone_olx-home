@@ -102,6 +102,7 @@
   align-items: center;
   gap: 10px;
   color: #4a4a4a;
+  margin-top: 20px;
 }
 .escolha-estado ul {
   display: flex;
@@ -127,4 +128,157 @@
 
 .escolha-estado ul a:hover::after {
   width: 100%;
+}
+
+/* Descubra */
+.descubra {
+  padding: 15px;
+}
+.descubra h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+.descubra-anuncios {
+  border-radius: 5px;
+}
+.img-1 {
+  background-image: url(../../img/descubra/img1.jpeg);
+  flex-basis: 100%;
+}
+.img-2 {
+  background-image: url(../../img/descubra/img2.png);
+  flex-basis: 55%;
+}
+.img-3 {
+  background-image: url(../../img/descubra/img3.png);
+  flex-basis: 45%;
+}
+.img-4 {
+  background-image: url(../../img/descubra/img4.png);
+  flex-basis: 45%;
+}
+.img-5 {
+  background-image: url(../../img/descubra/img5.png);
+  flex-basis: 55%;
+}
+.img-6 {
+  background-image: url(../../img/descubra/img6.png);
+  flex-basis: 55%;
+}
+.img-7 {
+  background-image: url(../../img/descubra/img7.png);
+  flex-basis: 45%;
+}
+
+.descubra-link {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 12px;
+  text-decoration: none;
+  background-size: cover;
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ffffff;
+}
+
+.descubra-link::after {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  );
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.descubra-anuncios {
+  display: flex;
+  flex-wrap: wrap;
+  height: 396px;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.descubra-link p {
+  z-index: 2;
+  color: #ffffff;
+}
+
+/* Sobre a olx */
+.sobre-olx {
+  padding: 15px 15px 80px 15px;
+  margin-top: 20px;
+}
+
+.sobre-titulo {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sobre1 {
+  background-image: url(../../img/banners/banner1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 186px;
+  padding: 36px 24px 32px;
+  border-radius: 4px;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sobre1,
+.sobre2 {
+  font-size: 0.9rem;
+}
+
+.sobre2 {
+  background-image: url(../../img/banners/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 186px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  display: block;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sobre-button {
+  background-color: #f28000;
+  border: none;
+  border-radius: 20px;
+  max-width: 120px;
+  width: 100%;
+  height: 32px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.sobre-button:hover {
+  background-color: #df7400;
 }

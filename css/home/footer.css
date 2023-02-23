@@ -1,0 +1,93 @@
+.footer-bg {
+  background-color: #f6f6f6;
+}
+.footer-conteudo {
+  padding-left: calc(50vw - 555px) !important;
+  padding-right: calc(50vw - 555px) !important;
+  padding-bottom: 80px;
+}
+hr {
+  margin: 0px;
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+  align-items: center;
+}
+.footer-nav span {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 14px;
+  word-break: break-word;
+  position: relative;
+}
+.footer-nav span:hover {
+  text-decoration: underline;
+  text-decoration-color: #6e0ad6;
+}
+.redes-sociais {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+}
+.redes-sociais a {
+  padding: 8px;
+  border-radius: 100%;
+  transition: all 0.3s ease 0s;
+}
+.redes-sociais .facebook:hover,
+.redes-sociais .facebook:active {
+  background-color: rgb(58, 89, 152);
+}
+.redes-sociais .youtube:hover,
+.redes-sociais .youtube:active {
+  background-color: rgb(255, 0, 0);
+}
+.redes-sociais .linkedin:hover,
+.redes-sociais .linkedin:active {
+  background-color: rgb(0, 132, 191);
+}
+.redes-sociais .instagram:hover,
+.redes-sociais .instagram:active {
+  background-color: rgb(225, 48, 108);
+}
+.redes-sociais .twitter:hover,
+.redes-sociais .twitter:active {
+  background-color: rgb(29, 161, 242);
+}
+.redes-sociais a:hover path {
+  fill: #fff;
+}
+.redes-sociais span {
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.copyright {
+  margin-top: 40px;
+}
+.links-juridicos {
+  color: #4a4a4a;
+  font-size: 12px;
+}
+address {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-style: normal;
+}
