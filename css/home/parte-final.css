@@ -130,6 +130,10 @@
   width: 100%;
 }
 
+.escolha-estado ul a li {
+  color: #551a8b;
+}
+
 /* Descubra */
 .descubra {
   padding: 15px;
