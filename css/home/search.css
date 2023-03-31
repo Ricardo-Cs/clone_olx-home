@@ -95,3 +95,10 @@
     overflow-x: scroll;
   }
 }
+
+@media (max-width: 1024) {
+  .categorias-lista li a {
+    width: 60px;
+    height: 100px;
+  }
+}

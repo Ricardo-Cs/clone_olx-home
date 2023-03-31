@@ -229,6 +229,27 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .descubra-anuncios {
+    flex-direction: row;
+    height: 800px;
+  }
+
+  .descubra-link {
+    width: 100%;
+  }
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4,
+  .img-5,
+  .img-6,
+  .img-7 {
+    flex-basis: 100%;
+  }
+}
+
 .descubra-link p {
   z-index: 2;
   color: #ffffff;
@@ -261,6 +282,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-position: 100% 0;
 }
 
 .sobre1,
@@ -281,6 +303,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-position: 100% 0;
 }
 
 .sobre-button {
@@ -300,4 +323,25 @@
 
 .sobre-button:hover {
   background-color: #df7400;
+}
+
+@media (max-width: 1200px) {
+  .sobre1,
+  .sobre2 {
+    width: 450px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sobre1,
+  .sobre2 {
+    width: 570px;
+    font-size: initial;
+    margin: 0 auto;
+  }
+
+  .sobre-conteudo {
+    gap: 20px;
+  }
 }
