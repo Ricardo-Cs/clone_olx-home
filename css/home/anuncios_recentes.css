@@ -4,7 +4,7 @@
 
 .recomendados-conteudo {
   background-color: #fff;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 50px 20px;
   overflow: hidden;
 }
 
@@ -52,12 +52,6 @@
 .recomendados-conteudo .conteudo-recentes span + span {
   font-size: 1rem;
   font-weight: bold;
-}
-
-/* Separador entre a parte de anúncios recentes e a parte final. */
-.spacer {
-  background-color: #6e0ad6;
-  height: 120px;
 }
 
 /* Não consegui fazer a barra de scroll quando diminuir a width da página. */

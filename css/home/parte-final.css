@@ -188,9 +188,20 @@
   border: 1px solid #ffffff;
 }
 
-/* .descubra-link:hover {
+.descubra-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transition: transform 0.35s ease;
+}
+
+.descubra-link:hover:before {
   transform: scale(1.1);
-} */
+}
 
 .descubra-link::after {
   background: linear-gradient(
