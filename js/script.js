@@ -36,10 +36,13 @@ leftArrow.addEventListener("click", () => {
 });
 
 rightArrow.addEventListener("click", () => {
-  if (itemIndex === itemCount - 1) {
-    itemIndex = 0;
+  if (itemIndex + 3 >= itemCount) {
+    // Verifica se o próximo item a ser exibido está além do número de itens na galeria
+    rightArrow.style.display = "none";
+    itemIndex = itemCount - 3; // Volta para o penúltimo item
   } else {
-    itemIndex++;
+    itemIndex = itemIndex + 3;
+    rightArrow.style.display = "flex";
   }
   slideItem();
 });
